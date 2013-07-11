@@ -1,0 +1,3 @@
+zmonitor.sh usr/bin
+zbpserver usr/bin
+ZBP_Bins/config.ini ZBP_Bins

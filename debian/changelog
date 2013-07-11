@@ -1,0 +1,6 @@
+zbpserver-1.12 (2) stable; urgency=low
+
+  * Repackage application in CDBS and define required dependencies to install
+    correctly.
+
+ -- Ryan Hass <ryan@invalidchecksum.net>>  Wed, 10 Jul 2013 14:48:39 -0700

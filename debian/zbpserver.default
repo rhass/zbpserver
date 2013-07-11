@@ -1,0 +1,6 @@
+# Defaults for zbpserver initscript
+# sourced by /etc/init.d/zbpserver
+# installed at /etc/default/zbpserver by the maintainer scripts
+
+DAEMON_OPTS=""
+LOG_FILE="/var/log/zbp.log"
