@@ -13,7 +13,8 @@ set -e
 
 case "$1" in
     configure)
-    setcap 'cap_net_bind_service=+ep' /usr/bin/zbpserver
+        adduser --system --no-create-home zbp
+        setcap 'cap_net_bind_service=+ep' /usr/bin/zbpserver
     ;;
 
     *)

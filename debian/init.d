@@ -31,6 +31,7 @@ DAEMON=/usr/sbin/zbpserver      # Introduce the server's location here
 DAEMON_ARGS=""                  # Arguments to run the daemon with
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
+RUNAS=zbp
 
 # Exit if the package is not installed
 [ -x $DAEMON ] || exit 0
@@ -55,9 +56,9 @@ do_start()
     #   0 if daemon has been started
     #   1 if daemon was already running
     #   2 if daemon could not be started
-    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON --test > /dev/null \
+    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -c $RUNAS --test > /dev/null \
         || return 1
-    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- \
+    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -c $RUNAS -- \
         $DAEMON_ARGS \ | logger -f "$LOG_FILE"
         || return 2
 }
