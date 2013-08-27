@@ -1,0 +1,13 @@
+/var/log/zbp/zbp.log {
+    # don't use time based rotation, but size-based
+    size 1000k
+    # don't move, but copy-and-truncate so the application won't have to be
+    # told that the file has moved.
+    copytruncate
+    # maximum of one old file
+    rotate 5
+    # counting old files starts at 1 rather than 0
+    start 1
+    # don't use compression
+     nocompress
+}

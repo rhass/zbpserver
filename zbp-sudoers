@@ -1,0 +1,1 @@
+zbp ALL=(root) NOPASSWD: /usr/bin/apt-get update, /usr/bin/apt-get install -y --force-yes zbpserver

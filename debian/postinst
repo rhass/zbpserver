@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for zbpserver-1.12
+# postinst script for zbpserver
 #
 # see: dh_installdeb(1)
 

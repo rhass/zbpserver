@@ -1,3 +1,23 @@
+zbpserver (1.14.2-0) stable; urgency=low
+
+  * New upstream release.
+
+ -- Ryan Hass <ryan@invalidchecksum.net>  Mon, 26 Aug 2013 21:20:13 -0700
+
+zbpserver (1.14.1-3) stable; urgency=low
+  * Saving pid under /var/run/zbp/pid
+  * Mediator urls updated to new domain cloud.smartenit.com
+  * Mediator and discover feature released
+  * Option to read a configuration file under /etc/zbp/config.ini if relative path is not found.
+  * Support for Sys_RAWMsg included.
+  * Methods in NwkMgmt to get the active network table for each device. Nwk_GetTableFromController and Nwk_GetAllTable
+  * A signal was implemented to emit asynchronously the retrieved info (active nwk tables) Nwk_ActiveNwkTable
+  * Bug while removing nodes from area was fixed.
+  * Repackage application in CDBS and define required dependencies to install
+    correctly.
+
+ -- Juan Delgado <juan@smartenit.com>>  Tue, 06 Aug 2013 13:48:39 -0500
+
 zbpserver-1.12 (2) stable; urgency=low
 
   * Repackage application in CDBS and define required dependencies to install

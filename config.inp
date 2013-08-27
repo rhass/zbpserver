@@ -1,0 +1,37 @@
+# Configuration file for ZBP Services
+
+# Harmony Settings
+timezone= PDT+07:00					# Timezone to set in the harmony (timing sync purposes
+city= 92675						# City to be used in the sunrise/sunset sync
+address=Crr. 11 140-87					# Address used to calculate lat/long in the client
+latitude= 33.5039207					# Lattitude used to get the city and the timezone in the client
+longitude= -117.5613246					# Longitude used to get the city and the timezone in the client
+
+# Network Settings
+dhcp= off						# Flag to enable/disable dhcp (Reboot needed)
+ip= 98.189.165.231					# IP to be used if dhcp is off
+mask= 255.255.255.128					# Mask to be used if dhcp is off
+gateway= 98.189.165.129					# Gateway to be used if dhcp is off
+dns1= 68.105.28.16					# DNS #1 to be used if dhcp is off
+dns2= 68.105.29.16					# DNS #2 to be used if dhcp is off
+port= 50333			       			# Server port (Reboot needed)
+
+# Client Settings
+theme=gold						# Theme to be used in the client
+password= 09cbef6f2f30e9bf9a202c53142295478786d5f3	# Encrypted pwd for authentication purposes
+
+# DBUS default values for simplehomenet zbp
+interface=com.simplehomenet.ZBP				# Default Interface to be used in the dbus call
+serialtimeout=4000					# Timeout used in the zbp_services
+sourcepath=ftp://public:Simplehomenet@compacta.pointclark.net/HarmonyPlatinumDownloads/updates/	# Source path
+
+revisionfile=revision					# Revision name
+writedelay=100						# Write Operation Delay
+servicename=com.simplehomenet.ZBP			# Default Service name to be used in the dbus calenabledports=1
+enabledports=1						# Number of ports enabled to be used
+serialcom_0=/dev/ttyUSB0				# Serial port #1
+pin= 							# Pin	
+recoverMail= 						# Password Recovery Email
+InitialRun= TRUE					# Flag for initial startup	
+PwdFlag= FALSE						# Password Flag
+device=RaspberryPi

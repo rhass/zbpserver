@@ -1,15 +1,17 @@
-Source: zbpserver-1.12
+Source: zbpserver
 Section: misc
 Priority: extra
-Maintainer: Ryan Hass <ryan@invalidchecksum.net>
+Maintainer: Dhawal Doshi <ddoshi@simplehomenet.com>
 Build-Depends: cdbs, debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 Homepage: http://simplehomenet.com/solutions.asp?page_id=HomAidPi
 
-Package: zbpserver-1.12-2
+Package: zbpserver
 Architecture: armhf
-Depends: ${shlibs:Depends}, ${misc:Depends}, miniupnpc (>= 1.5-2), libcap2-bin
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcap2-bin, rsyslog, sudo, dbus
 Description: Implements API to brige ZigBee, INSTEON and X10 networks
+ Clients can interface via DBUS, direct TCP socket with either XML or
+ Protobuf. Supports hardware interfaces from Smartenit and Smarthome.
  The ZBPServer software is Linux "middleware" that allows
  implementation and management of multiple automation networks. The
  server bridges the lower level (physical) interfaces to ZigBee,
@@ -20,4 +22,4 @@ Description: Implements API to brige ZigBee, INSTEON and X10 networks
  handling all aspects of monitoring and control of nodes, network
  management, automation event handling and scenes creation and
  management, the ZBPServer lets the client application concentrate on
- the graphical user interface.
+ the graphical user interface. 

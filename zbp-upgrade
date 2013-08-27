@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "ZBPServer upgrade script."
+
+echo -n "Updating local apt cache from upstream repository..."
+sudo apt-get update >> /tmp/zbp-upgrade.log
+if [ $? -eq 0 ]; then
+    echo "done"
+else·
+    echo "failed!"
+fi
+
+echo -n "Attempting to upgrade ZBPServer..."
+sudo apt-get install -y --force-yes zbpserver >> /tmp/zbp-upgrade.log
+if [ $? -eq 0 ]; then
+    echo "done"·
+else
+    echo "failed!"
+fi
+
+logger -t ZBPServer "zbp-upgrade was called."
+
+exit 0

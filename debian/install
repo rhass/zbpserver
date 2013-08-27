@@ -1,3 +1,10 @@
-zmonitor.sh usr/bin
 zbpserver usr/bin
-ZBP_Bins/config.ini ZBP_Bins
+zbp usr/bin
+zbp-prog usr/bin
+zbpserver usr/bin
+zbp-upgrade usr/bin
+zbpserverconfig usr/sbin
+config.inp usr/bin
+80-zbp.conf etc/rsyslog.d
+zbp-sudoers etc/sudoers.d
+zbp.conf etc/dbus-1/system.d
